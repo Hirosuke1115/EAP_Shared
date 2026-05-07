@@ -857,6 +857,8 @@ table8 <- vol_comparison |>
   rename(Characteristic = characteristic)
 
 # ── Export to Excel ───────────────────────────────────────────────────────
+dir.create("/home/hchiashi/EAP/EAP_Project/tables/", showWarnings = FALSE, recursive = TRUE)
+
 write_xlsx(
   list(
     "1_Descriptive"     = table1,
